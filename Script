@@ -1,0 +1,38 @@
+function readStory(title) {
+  const stories = {
+    "The Brave Little Rabbit":
+      "Once there was a little rabbit who was afraid of the dark. One evening, a friend needed help finding the way home. The rabbit took a deep breath, followed the moonlight, and discovered that being brave means trying even when you feel afraid.",
+
+    "Lulu and the Lion":
+      "Lulu met a friendly lion who looked scary at first. She smiled, shared her snack, and asked his name. Soon they were laughing together. Lulu learned that kindness can turn a stranger into a friend.",
+
+    "The Magic Tree":
+      "Mia found a tree covered in sparkling leaves. Every time she shared something with someone, a new leaf appeared. By sunset the tree was glowing, and Mia learned that sharing makes happiness grow."
+  };
+
+  alert(title + "\n\n" + (stories[title] || "A wonderful story is coming soon!"));
+}
+
+function abc() {
+  alert("ABC Adventure\n\nA is for Apple 🍎\nB is for Ball ⚽\nC is for Cat 🐱\n\nKeep going — A to Z!");
+}
+
+function numbers() {
+  alert("Number Fun\n\n1 • 2 • 3 • 4 • 5 • 6 • 7 • 8 • 9 • 10\n\nGreat counting! 🎉");
+}
+
+function colors() {
+  alert("Colors & Shapes\n\n🔴 Red circle\n🟦 Blue square\n🟨 Yellow star\n🟢 Green triangle");
+}
+
+function answer(choice) {
+  const score = document.getElementById("score");
+
+  if (choice === "A") {
+    score.textContent = "🎉 Correct! Apple starts with A.";
+    score.style.color = "green";
+  } else {
+    score.textContent = "😊 Try again! Think of Apple...";
+    score.style.color = "#d26a00";
+  }
+}
